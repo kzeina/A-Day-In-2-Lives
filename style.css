@@ -256,8 +256,14 @@ body {
   background: var(--blue-light);
   opacity: 0.7;
 }
-.pol-photo-b { background: linear-gradient(135deg, #b8d4e4 0%, #7baec4 100%); }
-.pol-photo-b { background: linear-gradient(135deg, #b8d4e4 0%, #7baec4 100%); }
+.pol-photo-a { 
+  background-image: url("photos/avani.png");
+  background-size: cover;
+  background-position: center; }
+.pol-photo-b { 
+  background-image: url("photos/assemay.JPG");
+  background-size: cover;
+  background-position: center;  }
 .pol-label {
   font-family: var(--font-hand);
   font-size: 25px;
@@ -375,6 +381,10 @@ body {
   font-style: italic;
   display: block;
   margin-top: 6px;
+}
+
+.intro-name {
+  color: var(--gold);
 }
 
 /* ══════════════════════════════════════════════════════════
