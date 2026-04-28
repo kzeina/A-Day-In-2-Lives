@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Day in Two Lives</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="nav-camera-icon">
+        <div class="cam-body"></div>
+        <div class="cam-lens"></div>
+      </div>
+      <span class="nav-title">a day in two lives</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#hero" class="nav-home" aria-label="Home — back to the landing page">
+          <svg class="nav-home-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V10.5z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+            <path d="M9 21v-6a1.5 1.5 0 011.5-1.5h3A1.5 1.5 0 0115 15v6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+      <li><a href="#story">the story</a></li>
+      <li><a href="#the-day">the day</a></li>
+      <li><a href="#capture">capture</a></li>
+      <li><a href="#team">the team + bts</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO ══ -->
+  <section class="hero" id="hero">
+   
+    <div class="hero-content">
+      <div class="hero-eyebrow">two people · one day · every moment</div>
+      <h1 class="hero-title">
+        <span class="title-line">Avani</span>
+        <span class="title-amp">&amp;</span>
+        <span class="title-line">Asemai</span>
+      </h1>
+      <p class="hero-sub">a day in two lives, unfolding in real time</p>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">Follow their mornings, afternoons, and evenings.<br>Choose whose story you enter first.</p>
+      <a href="#story" class="hero-cta">begin the story</a>
+    </div>
+
+    <div class="hero-polaroids">
+      <div class="hero-pol pol-left">
+        <div class="pol-photo pol-photo-a"></div>
+        <div class="pol-label">avani</div>
+      </div>
+      <div class="hero-pol pol-right">
+        <div class="pol-photo pol-photo-b"></div>
+        <div class="pol-label">asemai</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll to discover</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ STORY INTRO ══ -->
+  <section class="story-intro" id="story">
+    <div class="story-split">
+  
+      <!-- LEFT: VIDEO -->
+      <div class="story-video-wrap">
+        <video class="story-video" autoplay muted loop playsinline>
+          <source src="videos/hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+  
+      <!-- RIGHT: TEXT -->
+      <div class="story-text-wrap">
+        <div class="intro-film-strip">
+          <div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div>
+        </div>
+  
+        <p class="intro-text">
+          Jaipur is known as the Pink City, is famous for its beautiful palaces, colorful streets, and traditional jewellery. Growing up in Jaipur has taught me to notice beauty in the smallest things, from the blue pottery to the peacocks I see on the side of the road sometimes, and to appreciate how much there is to experience beyond the obvious. I love Jaipur because it feels like a perfect mix of rich history and a place I can always call home.</em>
+        </p>
+  
+        <div class="intro-film-strip">
+          <div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div><div class="film-hole"></div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ THE DAY (carousel) ══ -->
+  <section class="day-wrap" id="the-day" aria-label="The day: morning, afternoon, evening">
+    <div class="day-master-head">
+      <p class="day-master-label">the day</p>
+      <p class="day-master-sub">three chapters — flip through each part</p>
+      <div class="day-pager" role="group" aria-label="Part of the day">
+      </div>
+    </div>
+
+    <div class="day-slides-viewport" id="daySlidesViewport" tabindex="0" aria-label="Swipe or use arrow keys to change part of the day">
+      <button class="day-pager-fab day-pager-prev" id="dayPagerPrev">‹</button>
+      <button class="day-pager-fab day-pager-next" id="dayPagerNext">›</button>
+      <div class="day-slides-track" id="daySlidesTrack" style="transform: translateX(0)">
+       
+  <div class="day-slide time-section" id="morning" data-period="morning" data-day-index="0" aria-hidden="false">
+    <div class="time-header">
+      <div class="time-tag">i.</div>
+      <h2 class="time-title">morning</h2>
+      <div class="time-sub">the world before noon</div>
+      <div class="time-stamp">07:00 – 11:59</div>
+    </div>
+
+    <div class="person-cards">
+      <!-- Avani Morning -->
+      <div class="person-card" id="card-avani-morning" data-person="avani" data-period="morning">
+        <div class="card-polaroid">
+          <div class="card-photo">
+            <video class="card-video" id="vid-avani-morning" preload="none" playsinline>
+              <source src="videos/morning-avani.mp4" type="video/mp4" />
+            </video>
+            <div class="card-overlay" id="overlay-avani-morning">
+              <div class="play-btn" onclick="playVideo('avani','morning')">
+                <div class="play-triangle"></div>
+              </div>
+              <div class="card-person-label">Avani</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-name">avani</div>
+            <div class="card-time-label">morning</div>
+          </div>
+        </div>
+        <div class="card-watch-btn" onclick="playVideo('avani','morning')">watch avani's morning</div>
+        <div class="card-watched-badge" id="badge-avani-morning">watched</div>
+      </div>
+
+      <!-- vs divider -->
+      <div class="vs-divider">
+        <div class="vs-line"></div>
+        <div class="vs-circle">vs</div>
+        <div class="vs-line"></div>
+      </div>
+
+      <!-- Asemai Morning -->
+      <div class="person-card" id="card-asemai-morning" data-person="asemai" data-period="morning">
+        <div class="card-polaroid">
+          <div class="card-photo">
+            <video class="card-video" id="vid-asemai-morning" preload="none" playsinline>
+              <source src="videos/asemai-morning.mp4" type="video/mp4" />
+            </video>
+            <div class="card-overlay" id="overlay-asemai-morning">
+              <div class="play-btn" onclick="playVideo('asemai','morning')">
+                <div class="play-triangle"></div>
+              </div>
+              <div class="card-person-label">Asemai</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-name">asemai</div>
+            <div class="card-time-label">morning</div>
+          </div>
+        </div>
+        <div class="card-watch-btn" onclick="playVideo('asemai','morning')">watch asemai's morning</div>
+        <div class="card-watched-badge" id="badge-asemai-morning">watched</div>
+      </div>
+    </div>
+
+    <!-- Nudge prompt (shows after one watched) -->
+    <div class="nudge-banner" id="nudge-morning" style="display:none;">
+      <div class="nudge-inner">
+        <span class="nudge-text" id="nudge-morning-text"></span>
+        <button class="nudge-btn" id="nudge-morning-btn"></button>
+        <button class="nudge-skip" onclick="dismissNudge('morning')">maybe later</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-slide time-section section-alt" id="afternoon" data-period="afternoon" data-day-index="1" aria-hidden="true">
+    <div class="time-header">
+      <div class="time-tag">ii.</div>
+      <h2 class="time-title">afternoon</h2>
+      <div class="time-sub">the golden middle</div>
+      <div class="time-stamp">12:00 – 17:59</div>
+    </div>
+
+    <div class="person-cards">
+      <div class="person-card" id="card-avani-afternoon" data-person="avani" data-period="afternoon">
+        <div class="card-polaroid">
+          <div class="card-photo">
+            <video class="card-video" id="vid-avani-afternoon" preload="none" playsinline>
+              <source src="videos/afternoon-avani.mp4" type="video/mp4" />
+            </video>
+            <div class="card-overlay" id="overlay-avani-afternoon">
+              <div class="play-btn" onclick="playVideo('avani','afternoon')">
+                <div class="play-triangle"></div>
+              </div>
+              <div class="card-person-label">Avani</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-name">avani</div>
+            <div class="card-time-label">afternoon</div>
+          </div>
+        </div>
+        <div class="card-watch-btn" onclick="playVideo('avani','afternoon')">watch avani's afternoon</div>
+        <div class="card-watched-badge" id="badge-avani-afternoon">watched</div>
+      </div>
+
+      <div class="vs-divider">
+        <div class="vs-line"></div>
+        <div class="vs-circle">vs</div>
+        <div class="vs-line"></div>
+      </div>
+
+      <div class="person-card" id="card-asemai-afternoon" data-person="asemai" data-period="afternoon">
+        <div class="card-polaroid">
+          <div class="card-photo">
+            <video class="card-video" id="vid-asemai-afternoon" preload="none" playsinline>
+              <source src="videos/asemai-afternoon.mp4" type="video/mp4" />
+            </video>
+            <div class="card-overlay" id="overlay-asemai-afternoon">
+              <div class="play-btn" onclick="playVideo('asemai','afternoon')">
+                <div class="play-triangle"></div>
+              </div>
+              <div class="card-person-label">Asemai</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-name">asemai</div>
+            <div class="card-time-label">afternoon</div>
+          </div>
+        </div>
+        <div class="card-watch-btn" onclick="playVideo('asemai','afternoon')">watch asemai's afternoon</div>
+        <div class="card-watched-badge" id="badge-asemai-afternoon">watched</div>
+      </div>
+    </div>
+
+    <div class="nudge-banner" id="nudge-afternoon" style="display:none;">
+      <div class="nudge-inner">
+        <span class="nudge-text" id="nudge-afternoon-text"></span>
+        <button class="nudge-btn" id="nudge-afternoon-btn"></button>
+        <button class="nudge-skip" onclick="dismissNudge('afternoon')">maybe later</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-slide time-section" id="evening" data-period="evening" data-day-index="2" aria-hidden="true">
+    <div class="time-header">
+      <div class="time-tag">iii.</div>
+      <h2 class="time-title">evening</h2>
+      <div class="time-sub">when the light turns soft</div>
+      <div class="time-stamp">18:00 – 23:59</div>
+    </div>
+
+    <div class="person-cards">
+      <div class="person-card" id="card-avani-evening" data-person="avani" data-period="evening">
+        <div class="card-polaroid">
+          <div class="card-photo">
+            <video class="card-video" id="vid-avani-evening" preload="none" playsinline>
+              <source src="videos/evening-avani.mp4" type="video/mp4" />
+            </video>
+            <div class="card-overlay" id="overlay-avani-evening">
+              <div class="play-btn" onclick="playVideo('avani','evening')">
+                <div class="play-triangle"></div>
+              </div>
+              <div class="card-person-label">Avani</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-name">avani</div>
+            <div class="card-time-label">evening</div>
+          </div>
+        </div>
+        <div class="card-watch-btn" onclick="playVideo('avani','evening')">watch avani's evening</div>
+        <div class="card-watched-badge" id="badge-avani-evening">watched</div>
+      </div>
+
+      <div class="vs-divider">
+        <div class="vs-line"></div>
+        <div class="vs-circle">vs</div>
+        <div class="vs-line"></div>
+      </div>
+
+      <div class="person-card" id="card-asemai-evening" data-person="asemai" data-period="evening">
+        <div class="card-polaroid">
+          <div class="card-photo">
+            <video class="card-video" id="vid-asemai-evening" preload="none" playsinline>
+              <source src="videos/asemai-evening.mp4" type="video/mp4" />
+            </video>
+            <div class="card-overlay" id="overlay-asemai-evening">
+              <div class="play-btn" onclick="playVideo('asemai','evening')">
+                <div class="play-triangle"></div>
+              </div>
+              <div class="card-person-label">Asemai</div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="card-name">asemai</div>
+            <div class="card-time-label">evening</div>
+          </div>
+        </div>
+        <div class="card-watch-btn" onclick="playVideo('asemai','evening')">watch asemai's evening</div>
+        <div class="card-watched-badge" id="badge-asemai-evening">watched</div>
+      </div>
+    </div>
+
+    <div class="nudge-banner" id="nudge-evening" style="display:none;">
+      <div class="nudge-inner">
+        <span class="nudge-text" id="nudge-evening-text"></span>
+        <button class="nudge-btn" id="nudge-evening-btn"></button>
+        <button class="nudge-skip" onclick="dismissNudge('evening')">maybe later</button>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ═══════════════════════════════════════════ POLAROID CAMERA ══ -->
+  <section class="camera-section" id="capture">
+    <div class="camera-section-header">
+      <div class="time-tag">✦</div>
+      <h2 class="time-title">capture the moment</h2>
+      <div class="time-sub">take your own polaroid</div>
+    </div>
+
+    <div class="camera-wrap">
+      <!-- Camera Body -->
+      <div class="camera-body" id="cameraBody">
+        <div class="camera-top-bar">
+          <div class="camera-brand">instax · bluey</div>
+          <div class="camera-indicator" id="camIndicator"></div>
+        </div>
+        <div class="camera-viewfinder-wrap">
+          <div class="viewfinder-frame">
+            <video class="viewfinder-video" id="viewfinderVideo" autoplay playsinline muted></video>
+            <canvas class="viewfinder-canvas" id="viewfinderCanvas" style="display:none;"></canvas>
+            <div class="viewfinder-corner tl"></div>
+            <div class="viewfinder-corner tr"></div>
+            <div class="viewfinder-corner bl"></div>
+            <div class="viewfinder-corner br"></div>
+          </div>
+        </div>
+        <div class="camera-controls">
+          <div class="camera-flash-btn" id="flashToggle" onclick="toggleFlash()" title="flash">
+            <div class="flash-icon">⚡</div>
+          </div>
+          <div class="shutter-btn" id="shutterBtn" onclick="takePhoto()">
+            <div class="shutter-inner"></div>
+          </div>
+          <div class="camera-switch-btn" onclick="switchCamera()" title="switch">
+            <div class="switch-icon">↺</div>
+          </div>
+        </div>
+        <div class="camera-bottom-slot" id="photoSlot"></div>
+      </div>
+
+      <!-- Start Camera Button (before permission) -->
+      <div class="start-camera-wrap" id="startCameraWrap">
+        <button class="start-camera-btn" onclick="startCamera()">open the lens</button>
+        <div class="start-camera-note">allow camera access to take your polaroid</div>
+      </div>
+    </div>
+
+    <!-- Output Polaroid Area -->
+    <div class="polaroid-output" id="polaroidOutput" style="display:none;">
+      <div class="output-title">your polaroid</div>
+      <div class="polaroid-frame-picker" id="polaroidFramePicker" aria-label="Frame color options">
+        <span class="polaroid-frame-picker-label">frame color</span>
+        <div class="polaroid-frame-swatches">
+          <button type="button" class="polaroid-swatch is-selected" data-color="#f8f3e8" style="--sw: #f8f3e8" aria-pressed="true" aria-label="Cream" title="cream"></button>
+          <button type="button" class="polaroid-swatch" data-color="#e8ddc8" style="--sw: #e8ddc8" aria-pressed="false" aria-label="Paper" title="paper"></button>
+          <button type="button" class="polaroid-swatch" data-color="#dce8f0" style="--sw: #dce8f0" aria-pressed="false" aria-label="Ice blue" title="ice blue"></button>
+          <button type="button" class="polaroid-swatch" data-color="#f5e6e0" style="--sw: #f5e6e0" aria-pressed="false" aria-label="Blush" title="blush"></button>
+          <button type="button" class="polaroid-swatch" data-color="#fffef8" style="--sw: #fffef8" aria-pressed="false" aria-label="White" title="white"></button>
+          <label class="polaroid-swatch polaroid-swatch--custom" title="Custom color">
+            <span class="visually-hidden">Custom color</span>
+            <input type="color" id="polaroidFrameColorInput" value="#f8f3e8" aria-label="Custom frame color" />
+          </label>
+        </div>
+      </div>
+      <div class="polaroid-frame" id="polaroidFrame">
+        <canvas class="polaroid-canvas" id="polaroidCanvas"></canvas>
+        <div class="polaroid-note-area">
+          <input type="text" class="polaroid-note-input" id="polaroidNote" maxlength="40" placeholder="add a little note..." />
+        </div>
+      </div>
+      <div class="output-actions">
+        <button class="output-btn primary-btn" onclick="downloadPolaroid()">download polaroid</button>
+        <button class="output-btn" onclick="retakePhoto()">retake</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ VIDEO LIGHTBOX ══ -->
+  <div class="lightbox" id="lightbox" style="display:none;">
+    <div class="lightbox-bg" onclick="closeLightbox()"></div>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <div class="lightbox-label" id="lightboxLabel"></div>
+      <video class="lightbox-video" id="lightboxVideo" controls playsinline>
+        <source id="lightboxSource" src="" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <!-- Flash overlay -->
+  <div class="flash-overlay" id="flashOverlay"></div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">a day in two lives</div>
+      <div class="footer-note">developed with love</div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════ TEAM PAGE + BTS ══ -->
+  <section class="team-section" id="team">
+
+    <div class="team-header">
+      <div class="time-tag">✦</div>
+      <h2 class="team-title">the team</h2>
+      <div class="team-sub">the people behind the project</div>
+    </div>
+  
+    <div class="team-grid">
+  
+      <div class="team-card">
+        <div class="team-info">
+          <div class="team-name">Rabeya Zahan Mily</div>
+          <div class="team-role">Web Development</div>
+        </div>
+      </div>
+  
+      <div class="team-card">
+        <div class="team-info">
+          <div class="team-name">Zeina Khadem</div>
+          <div class="team-role">Web Development</div>
+        </div>
+      </div>
+  
+      <div class="team-card">
+        <div class="team-info">
+          <div class="team-name">Avani Patri</div>
+          <div class="team-role">Video Production</div>
+        </div>
+      </div>
+  
+      <div class="team-card">
+        <div class="team-info">
+          <div class="team-name">Asemai Kauas</div>
+          <div class="team-role">Video Production</div>
+        </div>
+      </div>
+    </div>  
+    
+    
+  <!-- ═══════════════════════════════════════════ BTS ══ -->
+  <div class="bts-section">
+
+    <div class="bts-header">
+      <div class="time-tag">✦</div>
+      <h3 class="team-title">behind the scenes</h3>
+      <div class="team-sub">moments from making this project</div>
+    </div>
+  
+    <div class="bts-grid">
+  
+      <img src="photos/1.jpeg" class="bts-img" />
+      <img src="photos/2.jpeg" class="bts-img" />
+  
+    </div>
+  
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
