@@ -1373,21 +1373,44 @@ body {
   text-align: center;
 }
 
-.bts-grid {
-display: flex;
-gap: 20px;
-justify-content: center;
-flex-wrap: wrap;
-margin-top: 20px;
+.bts-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 14px; 
+}
+
+.bts-track {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
 .bts-img {
-  width: 45%;
-  border-radius: 12px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  min-width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 14px;
 }
 
-.bts-img:hover {
-  transform: scale(1.02);
+.bts-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--cream);
+  color: var(--blue-deep);
+  border: none;
+  font-size: 28px;
+  width: 36px;      
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.bts-btn.prev { left: 10px; }
+.bts-btn.next { right: 10px; }
+
+.bts-btn:hover {
+  background: var(--gold);
 }

@@ -583,3 +583,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   initPolaroidFrameColorUI();
 });
+
+
+/* ─── BTS Scroll ──────────────────────────────────────── */
+let btsIndex = 0;
+
+function updateBTS() {
+  const track = document.getElementById('btsTrack');
+  const total = track.children.length;
+  btsIndex = (btsIndex + total) % total;
+  track.style.transform = `translateX(-${btsIndex * 100}%)`;
+}
+
+function btsNext() {
+  btsIndex++;
+  updateBTS();
+}
+
+function btsPrev() {
+  btsIndex--;
+  updateBTS();
+}

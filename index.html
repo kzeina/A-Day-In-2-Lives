@@ -44,7 +44,7 @@
       <h1 class="hero-title">
         <span class="title-line">Avani</span>
         <span class="title-amp">&amp;</span>
-        <span class="title-line">Asemai</span>
+        <span class="title-line">Assemay</span>
       </h1>
       <p class="hero-sub">a day in two lives, unfolding in real time</p>
       <div class="hero-divider"></div>
@@ -59,7 +59,7 @@
       </div>
       <div class="hero-pol pol-right">
         <div class="pol-photo pol-photo-b"></div>
-        <div class="pol-label">asemai</div>
+        <div class="pol-label">assemay</div>
       </div>
     </div>
 
@@ -75,7 +75,7 @@
   
       <!-- LEFT: VIDEO -->
       <div class="story-video-wrap">
-        <video class="story-video" autoplay muted loop playsinline>
+        <video class="story-video" autoplay muted loop playsinlin controls>
           <source src="videos/hero.mp4" type="video/mp4" />
         </video>
       </div>
@@ -92,7 +92,7 @@
         </p>
         
         <p class="intro-text">
-          <span class="intro-name">Asemay · Taraz</span><br>
+          <span class="intro-name">Assemay · Taraz</span><br>
           In Taraz, history lives in everyday spaces: uneven sidewalks, quiet courtyards, and the war memorial with its steady flame. People pass by naturally, as if it’s simply part of daily life.
         </p>
 
@@ -169,15 +169,15 @@
               <div class="play-btn" onclick="playVideo('asemai','morning')">
                 <div class="play-triangle"></div>
               </div>
-              <div class="card-person-label">Asemai</div>
+              <div class="card-person-label">Assemay</div>
             </div>
           </div>
           <div class="card-bottom">
-            <div class="card-name">asemai</div>
+            <div class="card-name">assemay</div>
             <div class="card-time-label">morning</div>
           </div>
         </div>
-        <div class="card-watch-btn" onclick="playVideo('asemai','morning')">watch asemai's morning</div>
+        <div class="card-watch-btn" onclick="playVideo('asemai','morning')">watch assemay's morning</div>
         <div class="card-watched-badge" id="badge-asemai-morning">watched</div>
       </div>
     </div>
@@ -239,15 +239,15 @@
               <div class="play-btn" onclick="playVideo('asemai','afternoon')">
                 <div class="play-triangle"></div>
               </div>
-              <div class="card-person-label">Asemai</div>
+              <div class="card-person-label">Assemay</div>
             </div>
           </div>
           <div class="card-bottom">
-            <div class="card-name">asemai</div>
+            <div class="card-name">assemay</div>
             <div class="card-time-label">afternoon</div>
           </div>
         </div>
-        <div class="card-watch-btn" onclick="playVideo('asemai','afternoon')">watch asemai's afternoon</div>
+        <div class="card-watch-btn" onclick="playVideo('asemai','afternoon')">watch assemay's afternoon</div>
         <div class="card-watched-badge" id="badge-asemai-afternoon">watched</div>
       </div>
     </div>
@@ -308,15 +308,15 @@
               <div class="play-btn" onclick="playVideo('asemai','evening')">
                 <div class="play-triangle"></div>
               </div>
-              <div class="card-person-label">Asemai</div>
+              <div class="card-person-label">Assemay</div>
             </div>
           </div>
           <div class="card-bottom">
-            <div class="card-name">asemai</div>
+            <div class="card-name">assemay</div>
             <div class="card-time-label">evening</div>
           </div>
         </div>
-        <div class="card-watch-btn" onclick="playVideo('asemai','evening')">watch asemai's evening</div>
+        <div class="card-watch-btn" onclick="playVideo('asemai','evening')">watch assemay's evening</div>
         <div class="card-watched-badge" id="badge-asemai-evening">watched</div>
       </div>
     </div>
@@ -468,7 +468,7 @@
   
       <div class="team-card">
         <div class="team-info">
-          <div class="team-name">Asemai Kauas</div>
+          <div class="team-name">Assemay Kauas</div>
           <div class="team-role">Video Production</div>
         </div>
       </div>
@@ -484,11 +484,18 @@
       <div class="team-sub">moments from making this project</div>
     </div>
   
-    <div class="bts-grid">
-  
-      <img src="photos/1.jpeg" class="bts-img" />
-      <img src="photos/2.jpeg" class="bts-img" />
-  
+    <div class="bts-carousel">
+      <button class="bts-btn prev" onclick="btsPrev()">‹</button>
+    
+      <div class="bts-track" id="btsTrack">
+        <img src="photos/1.jpeg" class="bts-img" />
+        <img src="photos/2.jpeg" class="bts-img" />
+        <img src="photos/3.png" class="bts-img" />
+        <img src="photos/4.png" class="bts-img" />
+        <img src="photos/5.png" class="bts-img" />
+      </div>
+    
+      <button class="bts-btn next" onclick="btsNext()">›</button>
     </div>
   
   </div>
